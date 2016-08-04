@@ -1,0 +1,20 @@
+#hhorario de verano
+#2013-17-abri +1hr, 2013-27-oct -1hr
+#2014-30-marz +1hr, 2014
+import datetime
+from datetime import date, timedelta
+import h5py
+import glob
+import matplotlib.mlab as mlab
+import matplotlib.dates as dates
+import matplotlib.pyplot as plt
+import numpy as np
+import pprint
+
+time0=datetime.datetime(1993,01,01,0,0,0)	#ajuste de TAI93 y UTC
+estacion = 'UNAM'
+gas = 'NO2'
+nlayer = 22
+year = '2013'
+month = '10*'
+#directorio de archivos 
